@@ -1,5 +1,3 @@
-/* a minimalist set of CSS resets */
-
 /* default to border-box */
 html {
   box-sizing: border-box;
@@ -10,11 +8,13 @@ html {
   box-sizing: inherit;
 }
 
-/* adjust typography defaults */
+/* adjust body styles */
 body {
   margin: 1rem;
   font-family: sans-serif;
   line-height: 1.5;
+  
+  background: #FEFADC;
 }
 
 /* images and videos max out at full width */
@@ -22,4 +22,27 @@ img,
 video {
   height: auto;
   max-width: 100%;
+}
+
+.week {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+.weekday, .weekend {
+  background: #F6D4BA; /* peach color */
+  display: inline-block;
+  width: calc(100% / 8);
+  height: 50px;
+}
+
+.weekend {
+  background: #F3B391; /* orange color */
+}
+
+.day-number {
+  font-size: 10px;
+  float: right;
+  padding: 5px;
 }
